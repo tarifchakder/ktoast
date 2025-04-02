@@ -49,7 +49,7 @@ In a multiplatform project, add the dependency to your `commonMain` source set:
 ```kotlin
 commonMain {
   dependencies {
-    implementation("io.github.tarifchakder.materializekmp:material-theme:0.0.1")
+    implementation("io.github.tarifchakder.ktoast:ktoast:1.0.0")
   }
 }
 ```
@@ -57,10 +57,10 @@ commonMain {
 
 ```toml
 [versions]
-materialtheme = "1.0.0"
+toast = "1.0.0"
 
 [libraries]
-materialKolor = { module = "io.github.tarifchakder.materializekmp", version.ref = "materialtheme" }
+materialKolor = { module = "io.github.tarifchakder.ktoast:ktoast", version.ref = "toast" }
 ```
 
 ## Usage
