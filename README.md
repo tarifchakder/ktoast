@@ -60,7 +60,7 @@ commonMain {
 toast = "1.0.0"
 
 [libraries]
-materialKolor = { module = "io.github.tarifchakder.ktoast:ktoast", version.ref = "toast" }
+k-toast = { module = "io.github.tarifchakder.ktoast:ktoast", version.ref = "toast" }
 ```
 
 ## Usage
