@@ -23,8 +23,8 @@ This library is written for Compose Multiplatform, and can be used on the follow
 
 ## DEMO
 
-![Mobile](screenshot/mobile.gif)![Desktop](screenshot/desktop.gif)![Web](screenshot/web.gif)
-
+| ![Mobile](screenshot/mobile.gif) | ![Desktop](screenshot/desktop.gif) | ![Web](screenshot/web.gif) |
+|----------------------------------|------------------------------------|----------------------------|
 
 ## Configuration
 
