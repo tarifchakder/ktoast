@@ -1,7 +1,7 @@
 # KToast
 
-![Maven Central](https://img.shields.io/maven-central/v/io.github.tarifchakder.materializekmp/material-theme)
-[![License](https://img.shields.io/github/license/tarifchakder/MaterializeKMP)](https://opensource.org/license/mit/)
+![Maven Central](https://img.shields.io/maven-central/v/io.github.tarifchakder.ktoast/ktoast)
+[![License](https://img.shields.io/github/license/tarifchakder/ktoast)](https://opensource.org/license/mit/)
 
 [![Kotlin](https://img.shields.io/badge/Kotlin-2.1.10-blue.svg?logo=kotlin)](https://kotlinlang.org)
 [![Compose Multiplatform](https://img.shields.io/badge/Compose%20Multiplatform-1.6.1-blue)](https://github.com/JetBrains/compose-multiplatform)
