@@ -67,7 +67,7 @@ materialKolor = { module = "io.github.tarifchakder.materializekmp", version.ref 
 
 ```Kotlin
 // Create toast state
-    val toast = ToastState()
+val toast = ToastState()
 ```
 ```kotlin
 MaterialTheme {
@@ -83,8 +83,8 @@ MaterialTheme {
 ```
 
 ```Kotlin
-Now call it anywhere
-        toast1.showToast("Hi this is a common toast")
+// Now call it anywhere
+toast1.showToast("Hi this is a common toast")
 ```
 
 ## License
