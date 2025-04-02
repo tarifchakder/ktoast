@@ -44,6 +44,8 @@ Add KToast to your project using Gradle.
 
 In a multiplatform project, add the dependency to your `commonMain` source set:
 
+### Single Platform
+
 ```kotlin
 commonMain {
   dependencies {
@@ -51,6 +53,7 @@ commonMain {
   }
 }
 ```
+### Version Catalog
 
 ```toml
 [versions]
@@ -58,6 +61,30 @@ materialtheme = "1.0.0"
 
 [libraries]
 materialKolor = { module = "io.github.tarifchakder.materializekmp", version.ref = "materialtheme" }
+```
+
+## Usage
+
+```Kotlin
+// Create toast state
+    val toast = ToastState()
+```
+```kotlin
+MaterialTheme {
+  Box {
+    ToastHost(
+      modifier = Modifier.fillMaxSize().padding(20.dp),
+      alignment = Alignment.BottomCenter,
+      hostState = toast,
+      transitionSpec = { ToastDefaults.SLIDE }
+    )
+  }
+}
+```
+
+```Kotlin
+Now call it anywhere
+        toast1.showToast("Hi this is a common toast")
 ```
 
 ## License
