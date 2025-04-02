@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/github/license/tarifchakder/ktoast)](https://opensource.org/license/mit/)
 
 [![Kotlin](https://img.shields.io/badge/Kotlin-2.1.10-blue.svg?logo=kotlin)](https://kotlinlang.org)
-[![Compose Multiplatform](https://img.shields.io/badge/Compose%20Multiplatform-1.6.1-blue)](https://github.com/JetBrains/compose-multiplatform)
+[![Compose Multiplatform](https://img.shields.io/badge/Compose%20Multiplatform-1.7.3-blue)](https://github.com/JetBrains/compose-multiplatform)
 
 ![badge-android](https://img.shields.io/badge/Platform-Android-6EDB8D.svg?style=flat)
 ![badge-ios](https://img.shields.io/badge/Platform-iOS-CDCDCD.svg?style=flat)
