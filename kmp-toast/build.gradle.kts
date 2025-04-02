@@ -54,7 +54,6 @@ kotlin {
     sourceSets {
         commonMain.dependencies {
             implementation(compose.runtime)
-            implementation(compose.foundation)
             implementation(compose.material3)
             implementation(compose.ui)
         }
@@ -91,7 +90,7 @@ mavenPublishing {
     coordinates(
         groupId = "io.github.tarifchakder.ktoast",
         artifactId = "ktoast",
-        version = "0.0.1"
+        version = "1.0.0"
     )
 
     pom {

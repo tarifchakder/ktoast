@@ -1,5 +1,4 @@
-rootProject.name = "ktoast"
-enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
+@file:Suppress("UnstableApiUsage")
 
 pluginManagement {
     repositories {
@@ -27,6 +26,8 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
+enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
+rootProject.name = "ktoast"
 include(":composeApp")
 include(":kmp-toast")
