@@ -1,8 +1,7 @@
-# KToast
+# 🔔 KToast
 
-![Maven Central](https://img.shields.io/maven-central/v/io.github.tarifchakder.ktoast/ktoast)
-[![License](https://img.shields.io/github/license/tarifchakder/ktoast)](https://opensource.org/license/mit/)
-
+[![Maven Central](https://img.shields.io/maven-central/v/io.github.tarifchakder.ktoast/ktoast)](https://central.sonatype.com/artifact/io.github.tarifchakder.ktoast/ktoast)
+[![License](https://img.shields.io/github/license/tarifchakder/ktoast)](LICENSE)
 [![Kotlin](https://img.shields.io/badge/Kotlin-2.1.10-blue.svg?logo=kotlin)](https://kotlinlang.org)
 [![Compose Multiplatform](https://img.shields.io/badge/Compose%20Multiplatform-1.7.3-blue)](https://github.com/JetBrains/compose-multiplatform)
 
@@ -11,46 +10,47 @@
 ![badge-desktop](https://img.shields.io/badge/Platform-Desktop-DB413D.svg?style=flat)
 ![badge-js](https://img.shields.io/badge/Platform-JS%2FWASM-FDD835.svg?style=flat)
 
-**KToast** brings toast messages to the next level! Built with *Compose Multiplatform*, this library delivers seamless and versatile toast notifications across **Android**, **iOS**, **Web**, and **Desktop** platforms.
+---
+
+## ✨ Overview
+
+**KToast** is a lightweight toast/notice library built for **Compose Multiplatform**. It gives you a simple, unified API to show toasts across **Android**, **iOS**, **Desktop (JVM)**, and **Web/Wasm**—with sensible defaults and smooth transitions.
 
 ---
 
-## Supported Platforms
+## 🖥️ Demo
 
-KToast is designed for *Compose Multiplatform* and supports:
-
-- **Android**
-- **iOS**
-- **JVM (Desktop)**
-- **JavaScript/WASM (Browser)**
+|             Android              | Desktop | Web | IOS |
+|:--------------------------------:|:-------:|:---:|:----:|
+| ![Android](screenshot/mobile.gif) | ![Desktop](screenshot/desktop.gif) | ![Web](screenshot/web.gif) | ![IOS](screenshot/ios.gif) |
 
 ---
 
-## Demo
+## 📦 Features
 
-Check out KToast in action:
-
-| Mobile                          | Desktop                          | Web                          |
-|:-------------------------------:|:--------------------------------:|:----------------------------:|
-| ![Mobile](screenshot/mobile.gif) | ![Desktop](screenshot/desktop.gif) | ![Web](screenshot/web.gif) |
+- ⚡ **Cross-platform**: Android, iOS, Desktop (JVM), Web/Wasm
+- 🎛️ **Simple API**: one `ToastState` you can pass around
+- 🎨 **Composable** host: place it anywhere in your layout
+- 🌀 **Transitions**: slide/fade presets via `ToastDefaults`
+- 🧱 **Works with your theme**: drop into any Material setup
 
 ---
 
-## Installation
+## 🚀 Installation
 
-Add KToast to your project using Gradle.
+Add KToast to your **multiplatform** project by depending on it from `commonMain`.
 
-### Multiplatform Setup
-
-In a multiplatform project, add the dependency to your `commonMain` source set:
-
-### Single Platform
+### Gradle (Kotlin DSL)
 
 ```kotlin
-commonMain {
-  dependencies {
-    implementation("io.github.tarifchakder.ktoast:ktoast:1.0.0")
-  }
+kotlin {
+    sourceSets {
+        commonMain {
+            dependencies {
+                implementation("io.github.tarifchakder.ktoast:ktoast:1.0.0")
+            }
+        }
+    }
 }
 ```
 ### Version Catalog
@@ -86,9 +86,12 @@ MaterialTheme {
 // Now call it anywhere
 toast1.showToast("Hi this is a common toast")
 ```
-
+## 🤝 Contributing
+Issues and PRs are welcome!
+If you’d like to add features or fix bugs, please open an issue first so we can discuss scope and approach.
 ## License
-See [LICENSE](LICENSE) for more information.
+This project is distributed under the MIT License.
+[LICENSE](LICENSE) 
 
 
 
