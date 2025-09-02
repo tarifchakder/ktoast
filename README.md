@@ -20,8 +20,8 @@
 
 ## 🖥️ Demo
 
-|             Android              | Desktop | Web | IOS |
-|:--------------------------------:|:-------:|:---:|:----:|
+|              Android              |              Desktop               |            Web             |            IOS             |
+|:---------------------------------:|:----------------------------------:|:--------------------------:|:--------------------------:|
 | ![Android](screenshot/mobile.gif) | ![Desktop](screenshot/desktop.gif) | ![Web](screenshot/web.gif) | ![IOS](screenshot/ios.gif) |
 
 ---
