@@ -90,7 +90,7 @@ mavenPublishing {
     coordinates(
         groupId = "io.github.tarifchakder.ktoast",
         artifactId = "ktoast",
-        version = "1.0.0"
+        version = "1.0.1"
     )
 
     pom {
@@ -119,7 +119,6 @@ mavenPublishing {
         }
     }
 
-    publishToMavenCentral(SonatypeHost.CENTRAL_PORTAL)
-
+    publishToMavenCentral(SonatypeHost.CENTRAL_PORTAL, true)
     signAllPublications()
 }
