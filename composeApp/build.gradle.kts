@@ -66,6 +66,7 @@ kotlin {
             implementation(compose.ui)
             implementation(compose.components.resources)
             implementation(compose.preview)
+            implementation(compose.uiTooling)
             implementation(libs.kotlinx.coroutines.core)
         }
         desktopMain.dependencies {
