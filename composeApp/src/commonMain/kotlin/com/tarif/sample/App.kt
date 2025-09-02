@@ -21,14 +21,8 @@ import io.github.tarifchakder.ktoast.ToastState
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
-import org.jetbrains.compose.resources.painterResource
-import org.jetbrains.compose.ui.tooling.preview.Preview
-
-import ktoast.composeapp.generated.resources.Res
-import ktoast.composeapp.generated.resources.compose_multiplatform
 
 @Composable
-@Preview
 fun App() {
 
     val toast1 = ToastState()
