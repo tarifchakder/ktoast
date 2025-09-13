@@ -2,8 +2,8 @@
 
 [![Maven Central](https://img.shields.io/maven-central/v/io.github.tarifchakder.ktoast/ktoast)](https://central.sonatype.com/artifact/io.github.tarifchakder.ktoast/ktoast)
 [![License](https://img.shields.io/github/license/tarifchakder/ktoast)](LICENSE)
-[![Kotlin](https://img.shields.io/badge/Kotlin-2.1.10-blue.svg?logo=kotlin)](https://kotlinlang.org)
-[![Compose Multiplatform](https://img.shields.io/badge/Compose%20Multiplatform-1.7.3-blue)](https://github.com/JetBrains/compose-multiplatform)
+[![Kotlin](https://img.shields.io/badge/Kotlin-"2.0.20"-blue.svg?logo=kotlin)](https://kotlinlang.org)
+[![Compose Multiplatform](https://img.shields.io/badge/Compose%20Multiplatform-1.7.0-blue)](https://github.com/JetBrains/compose-multiplatform)
 
 ![badge-android](https://img.shields.io/badge/Platform-Android-6EDB8D.svg?style=flat)
 ![badge-ios](https://img.shields.io/badge/Platform-iOS-CDCDCD.svg?style=flat)
@@ -88,7 +88,13 @@ toast1.showToast("Hi this is a common toast")
 ```
 ## 🤝 Contributing
 Issues and PRs are welcome!
-If you’d like to add features or fix bugs, please open an issue first so we can discuss scope and approach.
+If you have an idea for a new feature or an enhancement, follow these steps to submit a pull request:
+1.	Fork the repository
+      Click the Fork button at the top-right of the repo to create your own copy.
+2.	Create a new branch
+
+```git checkout -b feature/my-new-feature```
+
 ## License
 This project is distributed under the MIT License.
 [LICENSE](LICENSE) 
