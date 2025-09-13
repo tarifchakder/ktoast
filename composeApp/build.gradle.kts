@@ -66,6 +66,7 @@ kotlin {
             implementation(compose.ui)
             implementation(compose.components.resources)
             implementation(libs.kotlinx.coroutines.core)
+            implementation(libs.ktoast)
         }
         desktopMain.dependencies {
             implementation(compose.desktop.currentOs)
@@ -99,10 +100,6 @@ android {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
-}
-
-dependencies {
-    commonMainImplementation(project(":kmp-toast"))
 }
 
 compose.desktop {
