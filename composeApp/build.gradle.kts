@@ -66,7 +66,7 @@ kotlin {
             implementation(compose.ui)
             implementation(compose.components.resources)
             implementation(libs.kotlinx.coroutines.core)
-            implementation(projects.ktoast)
+            implementation(projects.kmpToast)
         }
         desktopMain.dependencies {
             implementation(compose.desktop.currentOs)
