@@ -47,7 +47,7 @@ kotlin {
     sourceSets {
         commonMain {
             dependencies {
-                implementation("io.github.tarifchakder.ktoast:ktoast:1.0.0")
+                implementation("io.github.tarifchakder.ktoast:ktoast:1.0.3")
             }
         }
     }
@@ -57,7 +57,7 @@ kotlin {
 
 ```toml
 [versions]
-toast = "1.0.0"
+toast = "1.0.3"
 
 [libraries]
 k-toast = { module = "io.github.tarifchakder.ktoast:ktoast", version.ref = "toast" }
