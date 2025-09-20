@@ -5,6 +5,13 @@ import org.jetbrains.kotlin.gradle.ExperimentalKotlinGradlePluginApi
 import org.jetbrains.kotlin.gradle.ExperimentalWasmDsl
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 import org.jetbrains.kotlin.gradle.targets.js.webpack.KotlinWebpackConfig
+import java.util.Properties
+import kotlin.apply
+
+val versionProps = Properties().apply {
+    file(rootProject.rootDir.resolve("version.properties")).inputStream().use { load(it) }
+}
+val mavenVersion: String = versionProps.getProperty("VERSION").trim()
 
 plugins {
     alias(libs.plugins.kotlinMultiplatform)
@@ -83,6 +90,17 @@ android {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
     }
+
+    lint {
+        abortOnError = false
+    }
+
+    publishing {
+        singleVariant("release") {
+            withSourcesJar()
+            withJavadocJar()
+        }
+    }
 }
 
 dependencies {
@@ -93,9 +111,8 @@ mavenPublishing {
     coordinates(
         groupId = "io.github.tarifchakder.ktoast",
         artifactId = "ktoast",
-        version = libs.versions.maven.get()
+        version = mavenVersion
     )
-
     pom {
         name.set("Ktoast")
         description.set("Toast are now universally supported across all platforms in Kotlin Multiplatform")
@@ -112,8 +129,8 @@ mavenPublishing {
         developers {
             developer {
                 id.set("tarif")
-                name.set("tarif")
-                email.set("mretchcoder@gmail.com")
+                name.set("Tarif Chakder")
+                email.set("tarifchakder@outlook.com")
             }
         }
 
@@ -121,7 +138,6 @@ mavenPublishing {
             url.set("https://github.com/tarifchakder/ktoast")
         }
     }
-
-    publishToMavenCentral(SonatypeHost.CENTRAL_PORTAL)
+    publishToMavenCentral(SonatypeHost.CENTRAL_PORTAL, true)
     signAllPublications()
 }
