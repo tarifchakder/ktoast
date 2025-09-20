@@ -8,6 +8,11 @@ import org.jetbrains.kotlin.gradle.targets.js.webpack.KotlinWebpackConfig
 import java.util.Properties
 import kotlin.apply
 
+val versionProps = Properties().apply {
+    file(rootProject.rootDir.resolve("version.properties")).inputStream().use { load(it) }
+}
+val mavenVersion: String = versionProps.getProperty("VERSION").trim()
+
 plugins {
     alias(libs.plugins.kotlinMultiplatform)
     alias(libs.plugins.androidLibrary)
@@ -108,7 +113,6 @@ mavenPublishing {
         artifactId = "ktoast",
         version = mavenVersion
     )
-
     pom {
         name.set("Ktoast")
         description.set("Toast are now universally supported across all platforms in Kotlin Multiplatform")
@@ -134,13 +138,6 @@ mavenPublishing {
             url.set("https://github.com/tarifchakder/ktoast")
         }
     }
-
-    publishToMavenCentral(SonatypeHost.CENTRAL_PORTAL)
+    publishToMavenCentral(SonatypeHost.CENTRAL_PORTAL, true)
     signAllPublications()
 }
-
-val versionProps = Properties().apply {
-    file(rootProject.rootDir.resolve("version.properties")).inputStream().use { load(it) }
-}
-
-val mavenVersion: String = versionProps.getProperty("VERSION")
