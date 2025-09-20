@@ -93,7 +93,7 @@ If you have an idea for a new feature or an enhancement, follow these steps to s
       Click the Fork button at the top-right of the repo to create your own copy.
 2.	Create a new branch
 
-```git checkout -b feature/my-new-feature```
+```git checkout -b feature/my-new-feature``` target branch ```develop```
 
 ## License
 This project is distributed under the MIT License.
